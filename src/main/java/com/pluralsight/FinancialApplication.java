@@ -15,6 +15,8 @@ public class FinancialApplication {
         // Cannot resolve method 'deposit' in 'Valuable'. Although account2 is an BankAccount object, its type is still
         // valuable. Since .deposit() is not explicitly defined in Valuable, it errors out.
 //        account2.deposit(new BigDecimal("100"));
+        // the methods available to account1 are all methods in BankAccount. It is forced to override methods in the interface.
+        // the methods available to account2 is getValue(), as it's the only method defined in Valuable, the reference of the object during compile time.
 
     }
 }
